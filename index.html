@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Christmas wishes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+Antique&family=Zen+Kaku+Gothic+New:wght@900&family=Zen+Maru+Gothic&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap">
+    <div id="santa_img"><img src="img/santa02.png" alt=""></div>
+
+    <input type="checkbox" id="popup">
+    
+    <div id="overlay">
+        <label for="popup" id="bg_gray"></label>
+    
+        <div id="window">
+            <label for="popup" id="btn_close">
+                <span></span>
+            </label>
+            <div id="msg">
+                <div class="input_area">
+                    <h2>なまえ</h2>
+                    <div><input type="text" id="uname"></div>
+                    <h2>住所</h2>
+                    <div>
+                        <select name="prefecture" id="prefecture"></select>
+                    </div>
+                    <h2>市区町村</h2>
+                    <div>
+                        <input type="text" id="city">
+                    </div>
+                    <h2>サンタさんへの手紙をかいてね！</h2>
+                    <textarea id="text" cols="30" rows="10"></textarea>
+                    
+                    <div><button id="send">送信</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <header>
+        <div class="nav">
+            <p id="txt_label"><label for="popup"><img src="img/letter.png" alt=""><span>push!</span></label></p>
+            <p class="map_link"><a href="map.html"><img src="img/map.png" alt=""></a></p>
+
+            <div id="user_sign"></div>
+        </div>
+    </header>
+    
+    <main>
+
+        <div id="output"></div>
+
+    </main>
+    
+
+    <div class="snow">●</div>
+    <div class="snow snow2nd">●</div>
+
+    <div class="present present01"><img src="img/present01.png" alt=""></div>
+    <div class="present present02"><img src="img/present02.png" alt=""></div>
+    <div class="present present03"><img src="img/socks.png" alt=""></div>
+
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="module" src="js/signin.js"></script>
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
