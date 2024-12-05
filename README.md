@@ -10,7 +10,7 @@ firebaseの認証機能をコンテンツに反映させた。
 
 ③DEMO
 
-
+https://ichi-e.github.io/kadai05_api/
 
 
 ④作ったアプリケーション用のIDまたはPasswordがある場合
