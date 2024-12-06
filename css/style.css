@@ -436,3 +436,7 @@ header {
     font-size: 10px;
     color: #fff;
 }
+.gm-ui-hover-effect {
+    position: absolute !important;
+    right: 0;
+}

@@ -42,7 +42,7 @@ async function addMarker(address, name) {
                 });
 
                 // 情報ウィンドウの作成
-                const infoContent = `<div class="info"><p>${name}</p></div>`;
+                const infoContent = `<div class="info">${name}</div>`;
                 const infowindow = new InfoWindow({ content: infoContent });
 
                 // マーカークリック時に情報ウィンドウを再表示
@@ -61,7 +61,10 @@ async function addMarker(address, name) {
 
 onChildAdded(dbRef, async (data) => {
     const msg = data.val();
-    const name = msg.uname;
+    const name = `
+    <p>${msg.uname}</p>
+    <p>${msg.text}</p>
+    `;
     const address = msg.prefecture + msg.city;
 
     if (!map) {
