@@ -35,8 +35,8 @@ async function addMarker(address, name) {
                     position: location,
                     map: map,
                       icon: {
-                            url: '../img/star.png', // お好みの画像までのパスを指定
-                            scaledSize: new google.maps.Size(15, 15) //👈追記
+                            url: '../img/star.png',
+                            scaledSize: new google.maps.Size(15, 15)
                         }
 
                 });
